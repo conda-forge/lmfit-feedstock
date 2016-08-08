@@ -1,4 +1,4 @@
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: lmfit
@@ -7,7 +7,7 @@ package:
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
   fn: lmfit-{{ version }}.tar.gz
-  sha256: faa19c412181a67ca8b6b43e83f3c4460517d94707fadeb6dc0f54af94159354
+  sha256: d13839b440856ebf637cf85195e242cc0effd6fd2b3a698e3ae229fb6d690c83
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
 about:
   home: http://lmfit.github.io/lmfit-py/
   license: lmfit
-  license_family: BSD 
+  license_family: BSD
   summary: >
       Non-Linear Least Squares Minimization, with flexible Parameter
       settings, based on scipy.optimize.leastsq, and with many additional

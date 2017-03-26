@@ -1,4 +1,4 @@
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: lmfit
@@ -7,7 +7,7 @@ package:
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
   fn: lmfit-{{ version }}.tar.gz
-  sha256: d13839b440856ebf637cf85195e242cc0effd6fd2b3a698e3ae229fb6d690c83
+  sha256: b77d514d547dc7179597603a06979e618a5d79b25ad38e1edcc6b43373a64985
 
 build:
   number: 0

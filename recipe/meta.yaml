@@ -19,12 +19,14 @@ requirements:
     - setuptools
     - numpy
     - scipy
+    - six
 
   run:
     - emcee
     - numpy
     - python
     - scipy
+    - six
 
 test:
   imports:

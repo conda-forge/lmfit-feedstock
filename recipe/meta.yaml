@@ -10,12 +10,13 @@ source:
   sha256: df5830fe78a2d2d83fc89f2f5bd3e81bee9d434d59efb505b5d6cd686b7a1631
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
+    - setuptools
     - numpy
     - scipy
 

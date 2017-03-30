@@ -25,9 +25,6 @@ requirements:
     - python
     - numpy
     - scipy
-    - emcee
-    - pandas
-    - matplotlib
     - six
 
 test:

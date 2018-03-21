@@ -1,15 +1,18 @@
-{% set version = "0.9.7" %}
+{% set name = "lmfit" %}
+{% set version = "0.9.9" %}
+{% set sha256 = "eee9fa534dc3c494a4d7dd3e0cd243792bbc6cb409805440282a4b5fdab50ea1" %}
 
 package:
-  name: lmfit
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
-  fn: lmfit-{{ version }}.tar.gz
-  sha256: 3cb3240be8f116a9924f0d0e6717f7db13d437d8fa2984fa17992b019e16a678
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
@@ -20,12 +23,14 @@ requirements:
     - numpy
     - scipy
     - six
+    - asteval >=0.9.12
 
   run:
     - python
     - numpy
     - scipy
     - six
+    - asteval >=0.9.12
 
 test:
   imports:

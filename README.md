@@ -15,16 +15,12 @@ Summary: Non-Linear Least Squares Minimization, with flexible Parameter settings
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/lmfit-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/lmfit-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/lmfit-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/lmfit-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/lmfit-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/lmfit-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/lmfit-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lmfit-feedstock)
 
 Current release info
 ====================
-
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lmfit.svg)](https://anaconda.org/conda-forge/lmfit)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/lmfit.svg)](https://anaconda.org/conda-forge/lmfit)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lmfit.svg)](https://anaconda.org/conda-forge/lmfit)
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lmfit/badges/version.svg)](https://anaconda.org/conda-forge/lmfit)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lmfit/badges/downloads.svg)](https://anaconda.org/conda-forge/lmfit)
 
 Installing lmfit
 ================

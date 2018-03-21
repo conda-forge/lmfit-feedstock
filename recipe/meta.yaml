@@ -1,13 +1,15 @@
+{% set name = "lmfit" %}
 {% set version = "0.9.9" %}
+{% set sha256 = "eee9fa534dc3c494a4d7dd3e0cd243792bbc6cb409805440282a4b5fdab50ea1" %}
 
 package:
-  name: lmfit
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
-  fn: lmfit-{{ version }}.tar.gz
-  sha256: 94202b69169553fc04aa7e430deb746aa0db65c4b0ed24c7ddce0c19c12f22fe
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0

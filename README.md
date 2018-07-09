@@ -15,9 +15,8 @@ Summary: Non-Linear Least Squares Minimization, with flexible Parameter settings
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/lmfit-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/lmfit-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/lmfit-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/lmfit-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/lmfit-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/lmfit-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/lmfit-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/lmfit-feedstock)
 
 Current release info
 ====================

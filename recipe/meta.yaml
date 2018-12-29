@@ -7,7 +7,7 @@ package:
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
   fn: lmfit-{{ version }}.tar.gz
-  sha256: d925c8305a758a2c8ff34de7ecb23a54fb1ea65a99d8a72d736a25f03b8f97e5
+  sha256: 73cb9180cbf7d18b150b5ad7ddd9da21b4d2034deb3a2fbd0affbbc322f2e663
 
 build:
   noarch: python

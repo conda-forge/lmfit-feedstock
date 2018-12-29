@@ -1,4 +1,4 @@
-{% set version = "0.9.11" %}
+{% set version = "0.9.12" %}
 
 package:
   name: lmfit
@@ -7,11 +7,11 @@ package:
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
   fn: lmfit-{{ version }}.tar.gz
-  sha256: 6acf0d3c369fcfbfd5f6482ebdf76e03983cd83430b1c2daa05e93509dba874b
+  sha256: d925c8305a758a2c8ff34de7ecb23a54fb1ea65a99d8a72d736a25f03b8f97e5
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:

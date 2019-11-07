@@ -41,6 +41,7 @@ about:
   home: http://lmfit.github.io/lmfit-py/
   license: lmfit
   license_family: BSD
+  license_file: LICENSE
   summary: >
       Non-Linear Least Squares Minimization, with flexible Parameter
       settings, based on scipy.optimize.leastsq, and with many additional

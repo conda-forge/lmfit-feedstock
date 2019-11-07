@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -20,18 +20,18 @@ requirements:
     - python
     - setuptools
     - numpy
-    - scipy>=0.19
+    - scipy >=0.19
     - six
-    - uncertainties>=3.0
-    - asteval>=0.9.12
+    - uncertainties >=3.0
+    - asteval >=0.9.12
 
   run:
     - python
     - numpy
-    - scipy>=0.19
+    - scipy >=0.19
     - six
-    - uncertainties>=3.0
-    - asteval>=0.9.12
+    - uncertainties >=3.0
+    - asteval >=0.9.12
 
 test:
   imports:
@@ -53,3 +53,4 @@ extra:
     - newville
     - danielballan
     - tritemio
+    - beckermr

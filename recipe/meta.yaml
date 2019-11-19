@@ -6,32 +6,24 @@ package:
 
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
-  fn: lmfit-{{ version }}.tar.gz
-  sha256: 4a175d4967fae218695178a750119bbabaec2a7b1dc66201b14ecb830c937f30
+  sha256: 1d71b748aa5a0cfbeef7d6829a59c8a2c24d9240ed36f9f25574793ac5225fae
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
-    - numpy
-    - scipy>=0.19
-    - six
-    - uncertainties>=3.0
-    - asteval>=0.9.12
-
+    - pip
   run:
     - python
     - numpy
-    - scipy>=0.19
+    - scipy >=0.19
     - six
-    - uncertainties>=3.0
-    - asteval>=0.9.12
+    - uncertainties >=3.0
+    - asteval >=0.9.12
 
 test:
   imports:

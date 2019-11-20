@@ -31,7 +31,8 @@ test:
 
 about:
   home: http://lmfit.github.io/lmfit-py/
-  license: lmfit
+  license: BSD-3-Clause
+  license_file: LICENSE
   license_family: BSD
   summary: >
       Non-Linear Least Squares Minimization, with flexible Parameter

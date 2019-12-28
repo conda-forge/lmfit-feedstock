@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
-  sha256: 1baa475df8c206c2919d4bf6debc4b0a09997825e2d0accf2912b099c053d389
+  sha256: 6bdbb6dd1f661079e933c456bc29bb60ff1fc95375973dcb657db5797a6ff207
 
 build:
   number: 0

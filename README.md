@@ -5,11 +5,9 @@ Home: http://lmfit.github.io/lmfit-py/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lmfit-feedstock/blob/master/LICENSE.txt)
 
 Summary: Non-Linear Least Squares Minimization, with flexible Parameter settings, based on scipy.optimize.leastsq, and with many additional classes and methods for curve fitting http:/lmfit.github.io/lmfit-py/
-
-
 
 
 Current build status

@@ -22,8 +22,13 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
+    - setuptools-scm >=6.0
   run:
     - python >=3.6
+    - pip
+    - setuptools
+    - setuptools-scm >=6.0
     - numpy >=1.18
     - scipy >=1.4
     - uncertainties >=3.0.1

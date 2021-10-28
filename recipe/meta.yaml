@@ -1,17 +1,22 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
+{% set name = "lmfit" %}
+{% set sha256 = "b3daa9f241ff4966c4e2a4710580c9e0237791f1c0e16d6334bb38979ec85b52" %}
 
 package:
-  name: lmfit
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/lmfit/lmfit-py/archive/{{ version }}.tar.gz
-  sha256: ee3d49eee568bc1ede9bc1704ef1b5a96d40a9206c043b4103d33240d37f0131
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
+  script:
+   - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+   - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -20,9 +25,9 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.18
-    - scipy >=1.3
+    - scipy >=1.4
     - uncertainties >=3.0.1
-    - asteval >=0.9.21
+    - asteval >=0.9.22
 
 test:
   imports:

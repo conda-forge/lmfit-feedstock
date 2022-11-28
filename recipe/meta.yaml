@@ -1,6 +1,6 @@
-{% set version = "1.0.3" %}
+{% set version = "1.1.0" %}
 {% set name = "lmfit" %}
-{% set sha256 = "b3daa9f241ff4966c4e2a4710580c9e0237791f1c0e16d6334bb38979ec85b52" %}
+{% set sha256 = "6d0b6c5632b1a21f7e2e6d726b44725a97c2efc7a8d8cba896e519721fda9587" %}
 
 package:
   name: {{ name|lower }}
@@ -15,8 +15,8 @@ build:
   noarch: python
   number: 0
   script:
-   - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-   - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:

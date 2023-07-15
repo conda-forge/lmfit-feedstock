@@ -1,6 +1,6 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set name = "lmfit" %}
-{% set sha256 = "b8a88e88374139625c199f930c76756bd075720ef7beb543371b48cc8f30024a" %}
+{% set sha256 = "fbd401317d5639c7fd23150efc00a387691f8d45ad690e2a3aaea12e951baf6f" %}
 
 package:
   name: {{ name|lower }}

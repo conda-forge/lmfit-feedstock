@@ -13,19 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
     - export SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
     - setuptools-scm >=6.0
   run:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
     - setuptools-scm >=6.0
@@ -33,6 +33,7 @@ requirements:
     - scipy >=1.6
     - uncertainties >=3.1.4
     - asteval >=0.9.28
+    - dill >=0.3.4
 
 test:
   imports:
